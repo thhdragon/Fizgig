@@ -17,8 +17,9 @@ from fizgig.families.flux3 import FLUX3
 from fizgig.families.moss_image import MOSS_IMAGE
 from fizgig.families.fibo2 import FIBO2
 from fizgig.families.vimoo import VIMOO
+from fizgig.families.mage_flow import MAGE_FLOW
 
-FAMILIES = {d.key: d for d in (KLEIN, MINIMAX, MINIMAX_IMAGE, KREA2, QWEN_IMAGE_21, SDXL, ANIMA, ZIMAGE, ZIMAGE_BASE, ACESTEP15, FLUX3, MOSS_IMAGE, FIBO2, VIMOO)}
+FAMILIES = {d.key: d for d in (KLEIN, MINIMAX, MINIMAX_IMAGE, KREA2, QWEN_IMAGE_21, SDXL, ANIMA, ZIMAGE, ZIMAGE_BASE, ACESTEP15, FLUX3, MOSS_IMAGE, FIBO2, VIMOO, MAGE_FLOW)}
 
 def _ft_presets_on_adafactor(d):
     """A built-in Fine-tune preset trains with Adafactor (#312): the family's LoRA presets are on Muon, a LoRA
